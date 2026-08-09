@@ -6,7 +6,7 @@ const PORT = 5003;
 
 const server = http.createServer((req, res) => {
     // 最初に開くファイルを「Pindex.html」に指定
-    let filePath = req.url === '/' ? './Pindex.html' : `.${req.url}`;
+    let filePath = req.url === '/' ? './index.html' : `.${req.url}`;
     
     const extname = path.extname(filePath);
     let contentType = 'text/html';
